@@ -1,0 +1,14 @@
+c()
+	
+	merge data
+
+cbind()
+	
+
+colnames()
+
+hist()
+
+summary()
+
+boxplot()

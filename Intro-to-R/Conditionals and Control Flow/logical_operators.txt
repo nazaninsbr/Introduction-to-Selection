@@ -1,0 +1,16 @@
+&
+	AND
+|
+	OR
+!
+	NOT
+&& - ||
+	
+	c(TRUE, FALSE) & c(TRUE, TRUE)
+
+	--> TRUE FALSE
+
+	c(TRUE, FALSE) && c(TRUE, TRUE)
+
+	--> TRUE (only checks the first one)
+

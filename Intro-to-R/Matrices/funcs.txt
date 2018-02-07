@@ -1,0 +1,7 @@
+rbind()
+
+cbind()
+
+colSums()
+
+rowSums()
