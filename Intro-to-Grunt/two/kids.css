@@ -1,0 +1,11 @@
+nav{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: dimgray;
+}
+.nav_row{
+    padding-top: 15px;
+    color: white;
+    float: right;
+}
