@@ -1,0 +1,7 @@
+1)	For internationalization purposes, the wchar_t type is used which expands on the numeric values available to represent character sets from various languages found around the world
+
+2)	A narrowing conversion is an implicit conversion. (7.4) — from an integer type or unscoped enumeration type to an integer type that cannot represent all the values of the original type, except where the source is a constant expression whose value after integral promotions will fit into the target type
+3)	The union can only store a value in one of its fields at a time.
+4)	C++ offers a couple of options for initializing your classes.  You can initialize the member variables by using the dot operator and setting the values explicitly or you can include a constructor in your class that is responsible for initialization the member variables.
+5)	encapsulation helps control the values that are assigned to member variables. We use encapsulation to prevent changing the member variables directly.  This is considered a poor practice because it presents the opportunity for potentially incorrect values to be assigned to these member variables.  This can result in unexpected behavior or more serious problems with your executing code.  It also helps with debugging of your code.
+6)  "get" methods in a const object should be declared with the const keyword as well.

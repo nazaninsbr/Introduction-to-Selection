@@ -1,0 +1,5 @@
+1. Preprocessor
+2. Compiler
+	takes the preprocessor code and turns it into object files
+3. Linker
+	takes object files links them into one executable program 
