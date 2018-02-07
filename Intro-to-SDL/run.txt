@@ -1,0 +1,2 @@
+g++ main.cpp -o main -I/Library/Frameworks/SDL2.framework/Headers -framework SDL2
+
