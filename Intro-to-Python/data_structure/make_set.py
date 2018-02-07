@@ -1,0 +1,8 @@
+a = set('helloFriend')
+b = set('FFffbbccamo')
+print(a)
+print(b)
+print(a|b)
+print(a&b)
+print(a - b)
+print(a ^b)
