@@ -1,0 +1,22 @@
+1.
+	SELECT col_name
+	FROM table_name
+2. 
+	SELECT col_name1, col_name2
+	FROM table_name
+3. 
+	SELECT *
+	FROM table_name 
+4. 
+	SELECT *
+	FROM table_name
+	LIMIT number;
+5.
+	SELECT DISTINCT col_name
+	FROM table_name;
+6. 
+	SELECT COUNT(*)
+	FROM table_name;
+7.
+	SELECT COUNT(DISTINCT col_name)
+	FROM table_name;
