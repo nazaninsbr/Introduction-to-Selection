@@ -1,0 +1,32 @@
+1. 	
+	pwd
+2.
+	ls, cd
+	ls -R
+3.
+	cp source dest
+4. 
+	mv (move) from_where to_where
+5. 
+	rm (delete)
+6.
+	rmdir
+	mkdir
+7.
+	cat
+8.
+	less
+9.
+	head
+10.
+	tail 
+11. 
+	man 
+12. 
+	cut 
+13. 
+	grep
+14. 
+	paste
+15. 
+	
