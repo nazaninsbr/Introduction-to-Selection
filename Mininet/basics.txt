@@ -1,0 +1,70 @@
+logining in
+	
+	login:	mininet
+	password:	mininet
+
+what to do and in what order?
+	1. login 
+	2. $ ifconfing 
+	3. check out hte eth0 address 
+
+		it was 10.0.2.15
+	4. $ ssh -X mininet@10.0.2.15
+	5. $ sudo mn
+
+		see step 5 image to see that we now have these things:
+			two hosts 
+			1 switch 
+			a controller 
+
+		I have created an image of the topology named topology_1
+
+		some of the commands we have here:
+
+			help 
+			nodes
+			dump 
+				more info on the components of the network 
+			net 
+				network links between devices 
+			h1 ping h2
+				you can use control+C out of there
+
+				the fist ping took more time than the rest because for the first packet the switch has to inform the controller and wait for a reply on what to do with the packet so the extra latency is because of the communication with the controller after that what it needs to do is cached in the switch so we no longer have to go through asking the controller 
+			xterm h1
+				I got an error telling me that it could not "connet to display" but in the ideal world it would have opened another window with the prompt that belonged to h1
+
+			h1 ping -c3 10.0.0.2 
+				the 10.0.0.2 is h2
+			h1 ifconfig 
+				see the ip address belonging to h1 which for me was 10.0.0.1
+			in the h1 shell
+				tcpdump -n 
+					-n 		no name resolution 
+
+				you need to run h1 ping h2 in the main shell to be able to see the results in the h1 shell 
+			pingall
+			iperf 
+				to get the bandwidth 
+				for me it tested the TCP bandwidth between h1 and h2 and the result was 25.4 Gbits/sec
+			iperfudp 
+				the udp bandwidth 
+			exit 
+	6. $ sudo mn -c
+		mn is mininet
+		-c does a clean up for after when you close your mininet prompt, like cleaning up the zombie processes and stuff like that 
+	7. $ sudo mn --link tc,bw=10,delay=10ms
+		this is a way to introduce latency to all your links 
+		bw=10
+			bandwidth of 10 Mbits/sec
+		you can see the result in an image called step 7
+
+		now if we run iperf again we can see that we get a much lower result comparing to what we got last time 
+			last time = 25.4 Gbits/sec
+			this time = 9.49 Mbits/sec
+
+
+
+
+
+

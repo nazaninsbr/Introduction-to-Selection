@@ -1,0 +1,1 @@
+sudo mn --custom ./q3.py --topo mytopo --controller=remote, ip=192.168.1.52
