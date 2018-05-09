@@ -1,0 +1,7 @@
+# let is used to declear variables 
+# now movie can only be used inside the function 
+
+
+function thenotebook(){
+	let movie = 'the notebook'
+}
